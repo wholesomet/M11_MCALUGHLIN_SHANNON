@@ -1,0 +1,167 @@
+@charset "utf-8";
+/*******************************************************************
+
+				Affects mutiple sections
+					
+***************************************************************************/
+
+	
+h1, h2, h3, h4 {
+	font-family: "Verdana";
+}
+p, li {
+	font-family: "Trebuchet MS";
+} 
+
+html { 
+	color-scheme: dark;
+}
+
+/*******************************************************************
+
+					Heading
+					
+***************************************************************************/
+h1 { 
+	text-align: center;
+	color: #1b998b; 
+	text-shadow: -7px 6px 2px #2e294e; 
+}
+
+nav {
+	background-color: #2e294e; 
+	display: flex; 
+	justify-content: center;
+	flex-wrap: wrap;
+    align-content: center;
+	width: auto;
+	height: 58px;
+	background: radial-gradient(circle, rgba(255,255,255,1) 5%, rgba(46,41,78,1) 28%);
+} 
+	nav li { 
+		list-style-type: none;
+		float: left;
+		margin-right: 22px;
+	}
+	nav a {
+		color: black;
+		text-decoration: underline;
+	}
+	
+
+/*******************************************************************
+
+				Body 
+					
+***************************************************************************/
+body {
+	/*top, bottom & right, left*/
+	margin: 0px 0px;
+	background-color: #181a1c;
+}
+
+
+.left-section-div, .right-section-div {
+	/*top right bottom left*/
+	margin: 0px 37px 0px 52px;
+} 
+
+h2, h3, h4 {
+	text-align: center;
+}
+
+.left-section-div {
+	float: left;
+	width: 900px;
+	margin-top: 35px;
+	margin-bottom: 75px;
+}
+	.left-section-div h2 { 
+		color: #1b998b;
+		margin-bottom: 31px;
+		transform: rotate(354deg);
+	}
+	.left-section-div h4 {
+		margin-top: 26px;
+		margin-bottom: 10px;
+	}
+		.left-section-div h4:last-of-type {
+			font-weight: normal;
+		}
+	.left-section-div .studio-pic {
+		height: auto; 
+		width: 846px; 
+		margin: auto;
+		display: block;
+	}
+
+.right-section-div { 
+	float: right;
+	border: solid black;
+	margin-top: 41px;
+} 
+	.right-section-div h3 {
+		color: #1b998b;
+		/*top right bottom left*/
+		margin-top: 8px;
+	}
+	.right-section-div h4 {
+		padding-top: 10px;
+		padding-bottom: 8px;
+		margin-block-start: 0px;
+	}
+	.right-section-div h4:nth-of-type(2) {
+		margin-block-end: 10px;		
+		}
+	.right-section-div img { 
+		height: auto;
+		width: 235px;
+		/*top right bottom left*/
+		margin: 0px 10px 0px 10px;
+	}
+		@keyframes bounce {
+			0% {
+				rotate: z -30deg;
+			} 
+			25% { 
+				position: relative; 
+				top: -10px;
+			}
+			50% {
+				position: relative; 
+				top: -20px;
+			}
+			75% {
+				position: relative; 
+				top: -30px;	
+			}
+			37% {
+				rotate: 30deg;
+			}
+			100% {
+				rotate: 0deg;
+			}
+		}
+		.right-section-div img { 
+			animation-name: bounce; 
+			animation-duration: 5s;
+			animation-timing-function: ease-in-out;
+		}
+/*******************************************************************
+
+				Footer 
+					
+***************************************************************************/
+
+footer {
+	float: left;	
+	width: 100%;
+	height: 100px;
+	background-color: #2e294e;
+	color: white;
+	
+	display: flex;
+	flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
